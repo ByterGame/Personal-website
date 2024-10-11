@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #df92d4;
+    /*overflow: auto; !* Разрешаем прокрутку *!*/
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #a0c1c9;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #c684d7, #df92d4);
+}
+
+.Background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Assets/backgroundCut.gif');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+@media screen and (max-width: 640px) {
+    img.Background {
+        left: 50%;
+        margin-left: -320px;
+    }
+}
+
+.cutaway {
+    position: absolute;
+    top: 32%;
+    left: 47%;
+    width: 50%;
+    height: 50%;
+    background-image: url('../Assets/cutaway.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 2;
+}
