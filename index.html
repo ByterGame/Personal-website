@@ -4,18 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Byter's personal website</title>
-    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 <body>
 
-<div class="Background"></div>
-<div class="Cutaway">
-    <div class="LeftContent">
-        <div class="Name"> Nesterov Igor'</div>
+    <div id="video-overlay">
+        <video id="intro-video" autoplay muted>
+            <source src="./Assets/backgroundbig1.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
     </div>
-    <div class="RightContent">
 
+    <div class="Background"></div>
+    <div class="PostScript">Визуальный контент целиком и полностью создан владельцем сайта. Авторским правом не защищено</div>
+    <div class="Cutaway">
+        <div class="ContentPanel">
+            <div class="BlocksTitle">Nesterov Igor'</div>
+            <div class="Information">Born on March 16, 2006, in a small village in the Republic of SAKHA (Yakutia).
+                <br>My hobbies include programming (especially game development),
+                drawing (I've been interested in this for the last couple of months at the time of writing),
+                3D modeling (although, to be honest, I haven't practiced in a while), football, table tennis, poker,
+                and I love lying on the grass and looking at the stars with thoughts like: "My actions won't change anything anyway,
+                so why should I limit myself? :)"
+            </div>
+        </div>
+        <div class="ContentPanel">
+            <div class="BlocksTitle">My professional way</div>
+            <div class="Information">
+                Around the 8th grade, I became interested in game development and dedicated over a year to mastering programming basics,
+                the Unity engine, 3D modeling, and level design. However,
+                I lost motivation for it in the 10th grade. After enrolling at DVFU in 2023, I re-entered the IT environment,
+                participated in various hackathons and competitions, and developed a small game with a group of friends for a three-day gamejam,
+                strengthened my theoretical knowledge and am happily learning new things in this field!
+            </div>
+        </div>
     </div>
-</div>
+
+    <script src="./JSscripts/loadScreen.js"></script>
+
 </body>
 </html>

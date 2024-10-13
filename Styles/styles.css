@@ -11,7 +11,7 @@ body, html {
     height: 100%;
     background-color: #df92d4;
     font-family: "Comicoro", serif;
-    cursor: url('../Assets/icon-cursor.png'), auto;
+    cursor: url('/Assets/icon-cursor.png'), auto;
 }
 
 ::-webkit-scrollbar {
@@ -29,14 +29,14 @@ body, html {
 }
 
 .Background {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     min-width: 600px;
     height: 100%;
     min-height: 450px;
-    background-image: url('../Assets/backgroundCut.gif');
+    background-image: url('/Assets/backgroundCut.gif');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -61,14 +61,14 @@ body, html {
     min-height: 200px;
     z-index: 2;
 }
-.LeftContent{
+
+.ContentPanel{
     display: flex;
     flex-direction: column;
     position: relative;
-    max-width: 49%;
-    min-width: 49%;
+    width: 49%;
     margin-right: 1%;
-    background-image: url('../Assets/cutaway.svg');
+    background-image: url('/Assets/cutaway.svg');
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
@@ -76,36 +76,73 @@ body, html {
     border-radius: 10px;
     z-index: 3;
 }
-.RightContent{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    max-width: 49%;
-    min-width: 49%;
-    background-image: url('../Assets/cutaway.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
-    border: 2px solid #c684d7;
-    border-radius: 10px;
-    z-index: 3;
+
+.PostScript{
+    position:relative;
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+    margin-top: 2px;
+    margin-left: 3px;
+    color: black;
+    font-size:calc(5px + 5 * (100vw - 320px) / 880);
+    font-family: cursive;
+    z-index: 4;
 }
-.Name{
-    width: 100%;
-    height: 10%;
-    margin-top: 5px;
+
+.BlocksTitle{
     text-align: center;
-    font-size:calc(20px + 25 * (100vw - 320px) / 880);
+    font-size: calc(15px + 20*(100vw - 320px) / 880);
     color: yellow;
-    font-weight: bold;
     font-style: italic;
-    text-decoration: underline;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    line-height: 1.5;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
-a, h1, h2, h3, h4, h5, h6, p {
+
+.Information{
+
     text-align: center;
-    word-wrap: break-word;
+    /*font-size:calc(5px + 15 * (min(100vh,100vw) - 320px) / 880);*/
+    font-size: 22px;
+    color: yellow;
+    /*font-weight: bold;*/
+    /*font-style: italic;*/
+    /*text-decoration: underline;*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /*line-height: calc(1 + 0.2 * (min(100vh,100vw) - 320px) / 880);*/
+    @media (max-width: 1280px) {
+        font-size: 22px;
+        line-height: 0.8;
+    }
+    @media (max-width: 1024px) {
+        font-size: 21px;
+        line-height: 0.7;
+    }
+    @media (max-width: 768px) {
+        font-size: 19px;
+        line-height: 0.8;
+    }
+    @media (max-width: 480px) {
+        font-size: 18px;
+        line-height: 0.8;
+    }
+
+    margin-bottom: 10px;
+}
+
+
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 5;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
