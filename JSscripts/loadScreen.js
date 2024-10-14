@@ -1,8 +1,13 @@
-const video = document.getElementById('intro-video');
-const overlay = document.getElementById('video-overlay');
-const content = document.getElementById('content');
+document.addEventListener('DOMContentLoaded', function() {
+    const videoOverlay = document.getElementById('video-overlay');
+    const introVideo = document.getElementById('intro-video');
 
-video.addEventListener('ended', () => {
-    overlay.style.display = 'none';
-    content.style.display = 'block';
+    if (window.innerWidth < 768) {
+        videoOverlay.style.display = 'none';
+    } else {
+        videoOverlay.style.display = 'block';
+        introVideo.addEventListener('ended', function() {
+            videoOverlay.style.display = 'none';
+        });
+    }
 });

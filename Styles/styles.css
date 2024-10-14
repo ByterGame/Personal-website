@@ -1,6 +1,6 @@
 @font-face {
-font-family: "Comicoro";
-src: url("../Fonts/Comicoro.ttf") format("truetype");
+    font-family: "Comicoro";
+    src: url("../Fonts/Comicoro.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -54,15 +54,15 @@ body, html {
     display: flex;
     flex-direction: row;
     top: 32%;
-    right: 4%;
+    right: 3%;
     width: 50%;
-    min-width: 350px;
+    min-width: 300px;
     height: 50%;
-    min-height: 200px;
+    min-height: 320px;
     z-index: 2;
 }
 
-.ContentPanel{
+.ContentPanel {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -77,31 +77,31 @@ body, html {
     z-index: 3;
 }
 
-.Contacts{
+.Contacts {
     display: flex;
     flex-direction: row;
     justify-content: right;
     padding-right: 1%;
-    height: 8%;
+    /*height: 8%;*/
     z-index: 2;
 }
 
-.Contact{
-    width: 5%;
+.Contact {
+    /*width: 5%;*/
     justify-content: center;
     z-index: 2;
 }
 
-.BlocksTitle{
+.BlocksTitle {
     text-align: center;
-    font-size: calc(15px + 20*(100vw - 320px) / 880);
+    font-size: calc(15px + 20 * (100vw - 320px) / 880);
     color: yellow;
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
 }
 
-.Information{
+.Information {
 
     text-align: center;
     font-size: 22px;
@@ -112,16 +112,16 @@ body, html {
         line-height: 0.8;
     }
     @media (max-width: 1024px) {
-        font-size: 21px;
-        line-height: 0.7;
+        font-size: 20px;
+        line-height: 0.73;
     }
     @media (max-width: 768px) {
-        font-size: 19px;
-        line-height: 0.8;
-    }
-    @media (max-width: 480px) {
         font-size: 18px;
-        line-height: 0.8;
+        line-height: 0.73;
+    }
+    @media (max-width: 620px) {
+        font-size: 17px;
+        line-height: 0.7;
     }
 
     margin-bottom: 10px;
