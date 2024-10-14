@@ -77,17 +77,19 @@ body, html {
     z-index: 3;
 }
 
-.PostScript{
-    position:relative;
-    width: fit-content;
-    height: fit-content;
-    text-align: left;
-    margin-top: 2px;
-    margin-left: 3px;
-    color: black;
-    font-size:calc(5px + 5 * (100vw - 320px) / 880);
-    font-family: cursive;
-    z-index: 4;
+.Contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 1%;
+    height: 8%;
+    z-index: 2;
+}
+
+.Contact{
+    width: 5%;
+    justify-content: center;
+    z-index: 2;
 }
 
 .BlocksTitle{
@@ -102,14 +104,9 @@ body, html {
 .Information{
 
     text-align: center;
-    /*font-size:calc(5px + 15 * (min(100vh,100vw) - 320px) / 880);*/
     font-size: 22px;
     color: yellow;
-    /*font-weight: bold;*/
-    /*font-style: italic;*/
-    /*text-decoration: underline;*/
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /*line-height: calc(1 + 0.2 * (min(100vh,100vw) - 320px) / 880);*/
     @media (max-width: 1280px) {
         font-size: 22px;
         line-height: 0.8;
