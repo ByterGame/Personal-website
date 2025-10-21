@@ -6,7 +6,7 @@
 }
 
 a{
-    cursor: url('/Assets/icon-cursor.png'), default;;
+    cursor: url('./Assets/icon-cursor.png'), default;;
 }
 
 
@@ -17,7 +17,7 @@ body, html {
     height: 100%;
     background-color: #df92d4;
     font-family: "Comicoro", serif;
-    cursor: url('/Assets/icon-cursor.png'), default;
+    cursor: url('./Assets/icon-cursor.png'), default;
 }
 
 ::-webkit-scrollbar {
@@ -42,7 +42,7 @@ body, html {
     min-width: 600px;
     height: 100%;
     min-height: 450px;
-    background-image: url('/Assets/background.gif');
+    background-image: url('./Assets/background.gif');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -85,7 +85,7 @@ body, html {
         width: 90%;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     }
-    background-image: url('/Assets/cutaway.svg');
+    background-image: url('./Assets/cutaway.svg');
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid #c684d7;
