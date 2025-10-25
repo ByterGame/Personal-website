@@ -1,3 +1,3 @@
 # Personal-website
 
-[website](https://watashi-no-hanashi.ru/)
+[website](https://bytergame.github.io/Personal-website/)
